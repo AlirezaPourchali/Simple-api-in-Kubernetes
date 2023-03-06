@@ -30,7 +30,7 @@ $ curl localhost/status
 
 # problems
 * i cant pull the image inside the cluster
-![78c792acc97e061d555e1c6ebc8b3ff6.png](:/7593ccf148274515bafc6d962d6aee83)
+i![78c792acc97e061d555e1c6ebc8b3ff6.png](../_resources/78c792acc97e061d555e1c6ebc8b3ff6.png)
  
 
 
