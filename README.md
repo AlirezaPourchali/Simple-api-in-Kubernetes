@@ -25,11 +25,17 @@ $ curl localhost/status
 # kubernetes
 * installed minikube for local clustering
 * started a minikube container and created a cluster and pulled my image
+```
+$ minikube start --driver=docker
+$ kubectl apply -f name.yml
+$ kubectl get all   //shows everything , pods , services , deployments and ...
+$ kubectl logs <name of pod or container>   //for logs
+```
 * wrote the Deployment & Service config in yaml file
 * wrote the the gitlab ci yaml file but didnt test it because of slow internet (pushing the image with every commit and pulling it inside the cluster)
 
 # problems
-* i cant pull the image inside the cluster
+* i cant pull the image inside the cluster (probably a network issue with docker)
 ![78c792acc97e061d555e1c6ebc8b3ff6.png](../_resources/78c792acc97e061d555e1c6ebc8b3ff6.png)
  
 
