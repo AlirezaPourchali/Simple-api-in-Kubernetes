@@ -1,0 +1,25 @@
+stages:
+  - build
+  - deploy
+
+
+image_builder:
+  stage: build
+  script:
+  # docker is installed before or i could write before_script
+      - sudo docker build . -t arpjoker/api-kuber
+      # testing as well
+      - sudo docker run --rm -d --name test arpjoker/api-kuber
+      - sudo docker rm -f test
+      # assuming its logged in to docker hub
+      - docker push arpjoker/api-kuber
+
+kuber_deploy:
+  stage: deploy
+  script:
+     # docker and minikube is installed before
+     # in real production , i dont think this is how it is done
+      - minikube delete 
+      - minikube start --driver=docker
+      - kubectl apply -f ./dep-serv-api.yml
+
