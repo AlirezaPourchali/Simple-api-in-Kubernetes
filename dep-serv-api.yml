@@ -16,20 +16,20 @@ spec:
     spec:
       containers:
       - name: api
-        image: arpjoker/api-kuber 
-        imagePullPolicy: Never 
+        image: arpjoker/api-kuber
         ports:
         - containerPort: 8000
-      restartPolicy: Never
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: api-service 
 spec:
+  type: NodePort
   selector:
     app.kubernetes.io/name: api
   ports: 
     - protocol: TCP
       port: 8080
       targetPort: 8000
+      nodePort: 30100
