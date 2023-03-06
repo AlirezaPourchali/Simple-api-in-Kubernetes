@@ -35,7 +35,7 @@ $ kubectl logs <name of pod or container>   //for logs
 * wrote the the gitlab ci yaml file but didnt test it because of slow internet (pushing the image with every commit and pulling it inside the cluster)
 
 # problems
-* i cant pull the image inside the cluster (probably a network issue with docker)
+* i can't pull the image inside the cluster (probably a network issue with docker)
 ![78c792acc97e061d555e1c6ebc8b3ff6.png](../_resources/78c792acc97e061d555e1c6ebc8b3ff6.png)
  
 
