@@ -36,7 +36,7 @@ $ kubectl logs <name of pod or container>   //for logs
 
 # problems
 * i can't pull the image inside the cluster (probably a network issue with docker)
-![78c792acc97e061d555e1c6ebc8b3ff6.png](../_resources/78c792acc97e061d555e1c6ebc8b3ff6.png)
+![78c792acc97e061d555e1c6ebc8b3ff6.png](https://github.com/AlirezaPourchali/task_kuber_api/blob/main/_resources/78c792acc97e061d555e1c6ebc8b3ff6.png)
  
 
 
