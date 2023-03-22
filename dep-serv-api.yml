@@ -17,8 +17,16 @@ spec:
       containers:
       - name: api
         image: arpjoker/api-kuber
+        livenessProbe:
+          httpGet:
+            path: /status
+            port: 8000
         ports:
         - containerPort: 8000
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "128Mi"
 ---
 apiVersion: v1
 kind: Service
