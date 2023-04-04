@@ -1,0 +1,12 @@
+api:
+  name: helm-dep-api
+  spec:
+    name: helm-cont-name
+
+ser:
+  name: helm-ser
+  spec:
+    type: NodePort
+    protocol: TCP
+    port: 8080
+    nodePort: 30100
